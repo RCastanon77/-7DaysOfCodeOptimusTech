@@ -1,0 +1,308 @@
+:root {
+    --cor-background: #FFFFFF;
+    --cor-background: 
+
+    --fonte-familia: 'Inter';
+    --cor-principal: #050505;
+    --tamanho-fonte_principal: 16px;
+
+    --cor-secundaria: #FFFFFF;
+    --tamanho-fonte_secundaria: 18px;
+    --tamanho-fonte_subtitulo: 20px;
+
+    --cor-titulo_logo: #3A404E;
+    --cor-texto_secundario: #667085;
+    --cor-fundo_botao: #8E2424;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+/* NavBar: logo, titulo, links e botões. */
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--fonte-familia);
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+}
+
+#imagem-logo {
+    margin-right: 0.5em;
+}
+
+.logo-titulo #texto-logo {
+    font-size: var(--tamanho-fonte_secundaria);
+    color: var(--cor-titulo_logo);
+    font-weight: 600;
+}
+
+.nav-links a {
+    font-size: var(--tamanho-fonte_principal);
+    color: var(--cor-texto_secundario);
+    text-decoration: none;
+    margin-right: 1.5rem;
+}
+
+.caixa-vazia_nav {
+    padding: 0.8em 1em;
+}
+
+.nav-botoes button {
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    background: none;
+    color: var(--cor-texto_secundario);
+    font-size: 0.9rem;
+}
+
+.nav-botoes #botao-cadastrar {
+    background-color: var(--cor-fundo_botao);
+    color: var(--cor-secundaria);
+}
+
+/* Primeira seção: texto generico, titulo e texto de conteudo. */
+.secao-cabecalho {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* gap dá um espaçamento entre todos os filhos de uma div com display flex*/
+    font-family: var(--fonte-familia);
+}
+
+.secao-cabecalho #texto-generico {
+    font-size: var(--tamanho-fonte_principal);
+    color: var(--cor-fundo_botao);
+    font-weight: 600;
+}
+
+.secao-cabecalho #titulo-cabecalho {
+    font-size: 40px;
+    font-weight: 600;
+    max-width: 60%;
+}
+
+.secao-cabecalho #texto-conteudo {
+    font-size: var(--tamanho-fonte_subtitulo);
+    color: var(--cor-texto_secundario);
+    max-width: 60%;
+    text-align: center;
+    line-height: 1.8rem;
+}
+
+/* Segunda seção: Metricas. */
+.container-metricas {
+    display: flex;
+    padding: 0 3em;
+}
+
+.metricas {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 0 5rem 6rem;
+    font-family: var(--fonte-familia);
+    gap: 1em;
+}
+
+.metricas div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.metricas h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--cor-fundo_botao);
+    line-height: 1.5;
+}
+
+.metricas h2 {
+    font-size: var(--tamanho-fonte_secundaria);
+    font-weight: 500;
+    color: var(--cor-titulo_logo);
+    line-height: 2;
+}
+
+.metricas p {
+    font-size: var(--tamanho-fonte_principal);
+    color: var(--cor-texto_secundario);
+    line-height: 1.2;
+}
+
+/* Terceira seção: Container (Procurando talentos). */
+.procurando-talentos {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 2em;
+    padding: 4em 3em;
+    font-family: var(--fonte-familia);
+}
+
+img {
+    width: 90%;
+}
+
+.container-vagas {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 0 1em 2em;
+
+}
+
+.container-vagas span {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #8e2424e0;
+    background-color: #f10c0c0f;
+    border-radius: 2em;
+    width: 10em;
+    height: 2em;
+    margin: auto;
+
+}
+
+.container-vagas h1 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.container-vagas p {
+    font-size: 20px;
+    color: #667085;
+}
+
+/* Terceira seção: Vagas. */
+.cards-vagas {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.cards-vagas .titulo-vaga {
+    font-size: 18px;
+    font-weight: 500;
+    color: #050505;
+}
+
+.cards-vagas span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #667085;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: start;
+}
+
+.card .titulo-card {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 1em 0;
+}
+
+.card .vaga {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    border: solid #e3e0e0 0.1rem;
+    border-radius: 15px;
+    padding: 2em;
+}
+
+.card .informacoes {
+    display: flex;
+    justify-content: start;
+    gap: 2em;
+}
+
+/* Quarta seção: Depoimentos. */
+.depoimentos{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-familia);
+    padding: 0 3em 5em;
+}
+
+.container-depoimentos {
+    background: #f6e9d7;
+    border-radius: 15px;
+    padding: 0 1em;
+}
+
+.depoimentos .container-depoimentos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0 2em;
+    gap: 1em;
+}
+
+.container-depoimentos div {
+    margin-top: 2em;
+}
+
+.depoimentos h1 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #8E2424;
+    margin: 0 1em 2em;
+    line-height: 1em;
+}
+
+.depoimento p {
+    line-height: 1.2em;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 10%;
+}
+
+.perfil h2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2em;
+}
+
+.perfil p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #3A404E;
+    padding: 0 0 2.5em;
+}
+
+#foto-perfil {
+    width: 30%;
+}
