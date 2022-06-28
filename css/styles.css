@@ -289,8 +289,8 @@ img {
 }
 
 #foto-perfil {
-    width: 4vw;
-    padding: 0 0 1em;
+    width: 5%;
+    border-radius: 50%;
 }
 
 .perfil h2 {
