@@ -102,9 +102,9 @@ body {
 .secao-cabecalho #texto-conteudo {
     font-size: var(--tamanho-fonte_subtitulo);
     color: var(--cor-texto_secundario);
-    max-width: 60%;
     text-align: center;
     line-height: 1.8rem;
+    width: 55vw;
 }
 
 /* Segunda seção: Metricas. */
@@ -251,13 +251,12 @@ img {
     display: flex;
     flex-direction: column;
     font-family: var(--fonte-familia);
-    padding: 0 3em 5em;
 }
 
 .container-depoimentos {
     background: #f6e9d7;
     border-radius: 15px;
-    padding: 0 1em;
+    padding: 2em;
 }
 
 .depoimentos .container-depoimentos {
@@ -265,12 +264,13 @@ img {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin: 0 2em;
+    margin: 0 6vw;
     gap: 1em;
 }
 
 .container-depoimentos div {
     margin-top: 2em;
+    width: 80vw;
 }
 
 .depoimentos h1 {
@@ -288,6 +288,11 @@ img {
     margin: 0 10%;
 }
 
+#foto-perfil {
+    width: 4vw;
+    padding: 0 0 1em;
+}
+
 .perfil h2 {
     font-size: 18px;
     font-weight: 600;
@@ -301,6 +306,59 @@ img {
     padding: 0 0 2.5em;
 }
 
-#foto-perfil {
-    width: 30%;
+/* Quinta seção: Rodape. */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-familia);
+    align-items: center;
+    gap: 1em;
+    padding: 2em
+}
+
+.container-formulario .conteudo-rodape {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+    padding: 0 0 2em;
+}
+
+.conteudo-rodape h1 {
+    font-size: 36px;
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.conteudo-rodape p {
+    font-size: 20px;
+    color: #667085;
+    font-weight: 500;
+}
+
+.conteudo-botao {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+button {
+    background-color: var(--cor-fundo_botao);
+    padding: 0.5em;
+    border-radius: 5px;
+    color: var(--cor-secundaria);
+}
+
+input {
+    border: solid 0.1em #b1adad;
+    border-radius: 5px;
+    width: 70%;
+}
+
+footer {
+    padding: 1em;
+    font-size: var(--tamanho-fonte_principal);
+    font-weight: 600;
+    color: #667085;
+    opacity: 50%;
 }
